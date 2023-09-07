@@ -5,6 +5,7 @@
 ###
 
 Repositorio de ejercicios y trabajos grupales.
+Los trabajos individuales se encuentran en cada rama de cada alumno.
 
 ### INTEGRANTES
 * Piris Matías
