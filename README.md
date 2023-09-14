@@ -1,17 +1,20 @@
 # UTN-MMXXIII
-## Tecnicatura en Programacíon UTN San Rafael - Mendoza
+
+## Tecnicatura en Programación UTN San Rafael - Mendoza
+
 ![logoutn](https://frra.cvg.utn.edu.ar/theme/image.php/snap/theme/1659979810/img/logo)
 
 ###
 
 Repositorio de ejercicios y trabajos grupales.
-Los trabajos individuales se encuentran en cada rama de cada alumno.
+Los trabajos individuales se encuentran en la rama de cada alumno.
 
 ### INTEGRANTES
-* Piris Matías
-* Ponce María Elena Haydee
-* Martínez Gonzalo Exequiel
-* Fiuri Franco Fabián
+
+-   Piris Matías
+-   Ponce María Elena Haydeé
+-   Martínez Gonzalo Exequiel
+-   Fiuri Franco Fabián
 
 <h2 align="left">Trabajamos con:</h2>
 
