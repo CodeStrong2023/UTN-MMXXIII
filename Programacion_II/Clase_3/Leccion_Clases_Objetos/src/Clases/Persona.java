@@ -3,10 +3,15 @@ package Clases;
 public class Persona {
 //Debe ser publica para poder acceder desde otros archivos
 //Palabra reservada class
-//Pascal Cases
-
-    public static void main(String[] args) {
-        
-    }
+//Pascal Case
     
+    //Atributos (caracteristicas)
+    String nombre;
+    String apellido;
+    
+    //Metodos (acciones)
+    public void obtenerInformacion(){
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Apellido: "+apellido);
+    }
 }
