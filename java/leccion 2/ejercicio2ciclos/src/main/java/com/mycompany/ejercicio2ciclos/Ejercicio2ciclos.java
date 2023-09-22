@@ -4,7 +4,7 @@
 
 package com.mycompany.ejercicio2ciclos;
 
-import java.util.Scanner;
+  b vcx
 import javax.swing.JOptionPane;
 
 /**
@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class Ejercicio2ciclos {
 
     public static void main(String[] args) {
-        Scanner entrada  = new Scanner(System.in);
+
         int numero,cuadrado;
         
         numero = Integer.parseInt(JOptionPane.showInputDialog("digite un numero: "));
