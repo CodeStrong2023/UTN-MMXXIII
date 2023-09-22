@@ -22,7 +22,7 @@ print(lista.count("Rosana"))
 lista.reverse()
 print(lista)
 
-#una lista se muiltiplica repitiendo elemt
+#una lista se muiltiplica repitiendo elementos
 lista = lista * 3
 
 #metodos de ordenamiento
