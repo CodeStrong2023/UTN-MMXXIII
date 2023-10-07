@@ -93,7 +93,7 @@ public class BaseDatos {
         comidasNaN.agregarProducto(productos.pizzaNapolitana);
     }
 
-    // este metodo permite que la base de datos retorne un local en espesifico
+    // este metodo permite que la base de datos retorne un local en especifico
     public Local getLocales(int i) {
         Local local= almacenDonJose;
         switch (i){

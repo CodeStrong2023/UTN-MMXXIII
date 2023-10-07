@@ -7,9 +7,9 @@ public class Local {
     private int id;
     private String nombre;
     private String direccion;
-    private double TiempoEspera;
+    private double tiempoEspera;
     private int puntuacion;
-    private String Categoria;
+    private String categoria;
 
     private List<Producto> productos;  // Lista de productos del local
 
@@ -26,9 +26,9 @@ public class Local {
         this.id = id;
         this.nombre = nombre;
         this.direccion = direccion;
-        this.TiempoEspera = tiempoEspera;
+        this.tiempoEspera = tiempoEspera;
         this.puntuacion = puntuacion;
-        this.Categoria = categoria;
+        this.categoria = categoria;
         this.productos = new ArrayList<>();
     }
     ////  metodo to String devuelve datos ordenados del local
@@ -38,9 +38,9 @@ public class Local {
                 "id=" + id +
                 ", nombre=" + nombre + '\'' +
                 ", direccion='" + direccion + '\'' +
-                ", TiempoEspera=" + TiempoEspera +
+                ", TiempoEspera=" + tiempoEspera +
                 ", puntuacion=" + puntuacion +
-                ", Categoria='" + Categoria + '\'' +
+                ", Categoria='" + categoria + '\'' +
                 ", productos=" + productos +
                 '}';
     }
@@ -72,11 +72,11 @@ public class Local {
     }
 
     public double getTiempoEspera() {
-        return TiempoEspera;
+        return tiempoEspera;
     }
 
     public void setTiempoEspera(double tiempoEspera) {
-        TiempoEspera = tiempoEspera;
+        this.tiempoEspera = tiempoEspera;
     }
 
     public int getPuntuacion() {
@@ -88,11 +88,11 @@ public class Local {
     }
 
     public String getCategoria() {
-        return Categoria;
+        return categoria;
     }
 
     public void setCategoria(String categoria) {
-        Categoria = categoria;
+        this.categoria = categoria;
     }
 
     public void setProductos(List<Producto> productos) {

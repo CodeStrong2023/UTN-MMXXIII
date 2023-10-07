@@ -9,7 +9,7 @@ public class ListaProductos {
     Producto chicle = new Producto("chicle", "chicle gusto menta",40,100);
     Producto chocolateConLeche = new Producto("Chocolate con leche ", "Aguila 290gr",400,10);
     Producto surtidoBagley = new Producto("Surtido Bagley", "galletitas surtidas",700,17);
-    Producto Mantecol = new Producto("Mantecol", "Pasta a base de mani 200gr",450,15);
+    Producto mantecol = new Producto("Mantecol", "Pasta a base de mani 200gr",450,15);
 
     // -------------------------------- despensa ----------------------------------------------
     Producto harina000 = new Producto("Harina 000", "reinaharina",150,10);
