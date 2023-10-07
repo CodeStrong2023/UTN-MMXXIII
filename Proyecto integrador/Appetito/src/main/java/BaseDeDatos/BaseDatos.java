@@ -21,13 +21,13 @@ public class BaseDatos {
 
     // esta metodo permite asignar  todos los productos a los respectivos locales
     public void setProductosALocales() {
-                // Almancen Don Jose
-        AlmacenDonJose.agregarProducto(productos.aceite);
-        AlmacenDonJose.agregarProducto(productos.harina000);
-        AlmacenDonJose.agregarProducto(productos.azucar);
-        AlmacenDonJose.agregarProducto(productos.mayonesa);
-        AlmacenDonJose.agregarProducto(productos.salsaDeTomate);
-        AlmacenDonJose.agregarProducto(productos.sprite);
+                // almancen Don Jose
+        almacenDonJose.agregarProducto(productos.aceite);
+        almacenDonJose.agregarProducto(productos.harina000);
+        almacenDonJose.agregarProducto(productos.azucar);
+        almacenDonJose.agregarProducto(productos.mayonesa);
+        almacenDonJose.agregarProducto(productos.salsaDeTomate);
+        almacenDonJose.agregarProducto(productos.sprite);
                 // kiosko San Miguel
         kioscoSanMiguel.agregarProducto(productos.chocolate);
         kioscoSanMiguel.agregarProducto(productos.cocaCola);
@@ -36,12 +36,12 @@ public class BaseDatos {
         kioscoSanMiguel.agregarProducto(productos.chicle);
         kioscoSanMiguel.agregarProducto(productos.crush);
                 // Rosticeria Cucu
-        rostiseriaCucu.agregarProducto(productos.empanadaH);
-        rostiseriaCucu.agregarProducto(productos.empanadasJQ);
-        rostiseriaCucu.agregarProducto(productos.pizzaMuzzarella);
-        rostiseriaCucu.agregarProducto(productos.hamburguesa);
-        rostiseriaCucu.agregarProducto(productos.milanesas);
-        rostiseriaCucu.agregarProducto(productos.ravioles);
+        rotiseriaCucu.agregarProducto(productos.empanadaH);
+        rotiseriaCucu.agregarProducto(productos.empanadaJQ);
+        rotiseriaCucu.agregarProducto(productos.pizzaMuzzarella);
+        rotiseriaCucu.agregarProducto(productos.hamburguesa);
+        rotiseriaCucu.agregarProducto(productos.milanesa);
+        rotiseriaCucu.agregarProducto(productos.ravioles);                
                 // Pizza ahora!!
         pizzaAhora.agregarProducto(productos.pizzaMuzzarella);
         pizzaAhora.agregarProducto(productos.pizzaNapolitana);
@@ -57,7 +57,7 @@ public class BaseDatos {
         lomitos100.agregarProducto(productos.lomitoConCebolla);
         lomitos100.agregarProducto(productos.cocaCola);
                 // Empanaads locales
-        empanadasLocales.agregarProducto(productos.empanadasJQ);
+        empanadasLocales.agregarProducto(productos.empanadaJQ);
         empanadasLocales.agregarProducto(productos.empanadaH);
         empanadasLocales.agregarProducto(productos.empanadaCarne);
         empanadasLocales.agregarProducto(productos.empanadaNapolitana);
@@ -104,7 +104,7 @@ public class BaseDatos {
                 local = kioscoSanMiguel;
                 break;
             case 3:
-                local =rotiseriaCucu;
+                local = rotiseriaCucu;
                 break;
             case 4:
                 local = pizzaAhora;

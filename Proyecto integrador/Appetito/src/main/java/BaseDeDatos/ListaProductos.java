@@ -6,9 +6,9 @@ public class ListaProductos {
     // ----------------------------------------- kiosko --------------------------------------------
     Producto alfajor = new Producto("Alfajor", "triple capa chocolate blanco",350,10);
     Producto chocolate = new Producto("Chocolate", "chocolate blanco",500,17);
-    Producto bubalu = new Producto("bubalu", "chicle gusto menta",40,100);
-    Producto ChocolateConLeche = new Producto("Chocolate con leche ", "Aguila 290gr",400,10);
-    Producto SurtidoBagley = new Producto("Surtido Bagley", "galletitas surtidas",700,17);
+    Producto chicle = new Producto("chicle", "chicle gusto menta",40,100);
+    Producto chocolateConLeche = new Producto("Chocolate con leche ", "Aguila 290gr",400,10);
+    Producto surtidoBagley = new Producto("Surtido Bagley", "galletitas surtidas",700,17);
     Producto Mantecol = new Producto("Mantecol", "Pasta a base de mani 200gr",450,15);
 
     // -------------------------------- despensa ----------------------------------------------
@@ -17,7 +17,7 @@ public class ListaProductos {
     Producto salsaDeTomate = new Producto("Salsa de tomate", "salsa de tomate con ajo 200gr",250,1);
     Producto azucar = new Producto("Azucar", "azucar blanca 1kg",800,10);
     Producto aceite = new Producto("Aceite Natura", "aceite de maiz",950,17);
-    Producto mayoneza = new Producto("Mayoneza Natura", "500 gr",4,8);
+    Producto mayonesa = new Producto("Mayoneza Natura", "500 gr",4,8);
     // ----------------------------------- Bebidas -------------------------------------
     Producto crush = new Producto("Crush", "gaseosa sabor naranja",950,10);
     Producto cocaCola = new Producto("Coca Cola", "gaseosa de cola 1lt",1200,17);
@@ -32,17 +32,17 @@ public class ListaProductos {
     Producto tallarines = new Producto("Tallarines", "pasta con salsa bolognesa",1000,10);
     Producto lomitoSimple = new Producto("Lomito Simple", "Con pan especiald e la casa",1800,12);
     Producto ravioles = new Producto("Ravioles", "Con queso, toimate y carne",2500,8);
-    Producto empanadasJQ= new Producto("Empanadas de jamon y queso", "Al horno riquisimas",300,10);
+    Producto empanadaJQ= new Producto("Empanadas de jamon y queso", "Al horno riquisimas",300,10);
     Producto empanadaH = new Producto("Empanada Humita", "Estilo norteño",350,12);
-    Producto milanezas = new Producto("Milanesa napolitana con puré", "porcion abundante",1500,8);
-    Producto pizzaProvensal= new Producto("Pizza con provensal", "pizza a la piedra",1450,10);
+    Producto milanesa = new Producto("Milanesa napolitana con puré", "porcion abundante",1500,8);
+    Producto pizzaProvenzal = new Producto("Pizza con provenzal", "pizza a la piedra",1450,10);
     Producto pizzaHongos = new Producto("pizza de hongos", "gran cantidad de hongos portobelo",2350,12);
     Producto pizzaAnana = new Producto("pizza de anana", "con anana y jamon",1500,8);
-    Producto lomitoDoble= new Producto("Lomito doble", "doble queso doble carne",1850,10);
+    Producto lomitoDoble = new Producto("Lomito doble", "doble queso doble carne",1850,10);
     Producto lomitoCompleto = new Producto("Lomito Completo", "con tomate, lechuga y huevo",2350,12);
-    Producto lomitoconCebolla = new Producto("Lomito con cebolla", "Con cebolla caramelizada y doble queso",1900,8);
-    Producto empanadasRoquefort= new Producto("Empanada de Roquefort", "al horno",1850,10);
-    Producto empanadaNapolotana = new Producto("Empanada napolitana", "con tomate, queso y albaca",2350,12);
+    Producto lomitoConCebolla = new Producto("Lomito con cebolla", "Con cebolla caramelizada y doble queso",1900,8);
+    Producto empanadaRoquefort = new Producto("Empanada de Roquefort", "al horno",1850,10);
+    Producto empanadaNapolitana = new Producto("Empanada napolitana", "con tomate, queso y albaca",2350,12);
     Producto empanadaCarne = new Producto("empanada de carne", "empanada de carne frita",1900,8);
 
     // ------------------------------------ Heladeria -----------------------------------------------------
