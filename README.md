@@ -1,7 +1,5 @@
 # UTN-MMXXIII
-
-## Tecnicatura en Programación UTN San Rafael - Mendoza
-
+## Tecnicatura en Programacíon UTN San Rafael - Mendoza
 ![logoutn](https://frra.cvg.utn.edu.ar/theme/image.php/snap/theme/1659979810/img/logo)
 
 ###
@@ -19,7 +17,6 @@ Los trabajos individuales se encuentran en la rama de cada alumno.
 <h2 align="left">Trabajamos con:</h2>
 
 ###
-
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
   <img width="12" />
