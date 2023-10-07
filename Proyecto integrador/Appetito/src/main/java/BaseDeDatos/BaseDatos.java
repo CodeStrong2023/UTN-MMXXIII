@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BaseDatos {
-    Local AlmacenDonJose = new Local(1, "AlmacenDonJose", "Urquiza 920", 20.30, 4, "Despensa, Bebidas");
+    Local almacenDonJose = new Local(1, "AlmacenDonJose", "Urquiza 920", 20.30, 4, "Despensa, Bebidas");
     Local kioscoSanMiguel = new Local(2,"Kiosco San Miguel","Belgrano 776",15,5,"Kiosko, Despensa, Bebidas");
-    Local rostiseriaCucu = new Local(3,"Rostiseria Cuco","Italia 76",10,3,"Restaurante");
+    Local rotiseriaCucu = new Local(3,"Rotiseria Cucu","Italia 76",10,3,"Restaurante");
     Local pizzaAhora = new Local(4,"Pizza ahora!","San Martin 96",15,4,"Restaurante");
     Local lomitos100 = new Local(5,"Lomitos 100%","Belgrano 24",15,5,"Restaurante");
     Local empanadasLocales = new Local(6,"Empanadas Locales","Belgrano 333",25,4,"Restaurante");
     Local restauranteRodriguez = new Local(7,"Restaurante Rodriguez","Libertad 241",15,3,"Restaurante, Bebidas");
-    Local heladeriaVaticano = new Local(8,"Heladeria Vaticano","Europa 231",5,2,"Heladerias, Cafeterias");
+    Local heladeriaVaticano = new Local(8,"Heladeria Vaticano","Europa 231",5,2,"Heladeria, Cafeteria");
     Local cafeteriaNeumman = new Local(9,"Cafeteria Neumman","España 2354",5,5,"Cafeteria, Heladeria, Panaderia");
-    Local comidasNaN = new Local(10,"Comidas NaN"," Cordoba 576",35,5,"Restaurantes,Bebidas,Despensas");
+    Local comidasNaN = new Local(10,"Comidas NaN"," Cordoba 576",35,5,"Restaurante,Bebidas,Despensa");
 
 
     //se crea instancia de productos
@@ -25,7 +25,7 @@ public class BaseDatos {
         AlmacenDonJose.agregarProducto(productos.aceite);
         AlmacenDonJose.agregarProducto(productos.harina000);
         AlmacenDonJose.agregarProducto(productos.azucar);
-        AlmacenDonJose.agregarProducto(productos.mayoneza);
+        AlmacenDonJose.agregarProducto(productos.mayonesa);
         AlmacenDonJose.agregarProducto(productos.salsaDeTomate);
         AlmacenDonJose.agregarProducto(productos.sprite);
                 // kiosko San Miguel
@@ -33,41 +33,41 @@ public class BaseDatos {
         kioscoSanMiguel.agregarProducto(productos.cocaCola);
         kioscoSanMiguel.agregarProducto(productos.sprite);
         kioscoSanMiguel.agregarProducto(productos.alfajor);
-        kioscoSanMiguel.agregarProducto(productos.bubalu);
+        kioscoSanMiguel.agregarProducto(productos.chicle);
         kioscoSanMiguel.agregarProducto(productos.crush);
                 // Rosticeria Cucu
         rostiseriaCucu.agregarProducto(productos.empanadaH);
         rostiseriaCucu.agregarProducto(productos.empanadasJQ);
         rostiseriaCucu.agregarProducto(productos.pizzaMuzzarella);
         rostiseriaCucu.agregarProducto(productos.hamburguesa);
-        rostiseriaCucu.agregarProducto(productos.milanezas);
+        rostiseriaCucu.agregarProducto(productos.milanesas);
         rostiseriaCucu.agregarProducto(productos.ravioles);
                 // Pizza ahora!!
         pizzaAhora.agregarProducto(productos.pizzaMuzzarella);
         pizzaAhora.agregarProducto(productos.pizzaNapolitana);
         pizzaAhora.agregarProducto(productos.pizzaAnana);
         pizzaAhora.agregarProducto(productos.pizzaHongos);
-        pizzaAhora.agregarProducto(productos.pizzaProvensal);
+        pizzaAhora.agregarProducto(productos.pizzaProvenzal);
         pizzaAhora.agregarProducto(productos.sprite);
                 //lomitos 100%
         lomitos100.agregarProducto(productos.lomitoSimple);
         lomitos100.agregarProducto(productos.hamburguesa);
         lomitos100.agregarProducto(productos.lomitoCompleto);
         lomitos100.agregarProducto(productos.lomitoDoble);
-        lomitos100.agregarProducto(productos.lomitoconCebolla);
+        lomitos100.agregarProducto(productos.lomitoConCebolla);
         lomitos100.agregarProducto(productos.cocaCola);
                 // Empanaads locales
         empanadasLocales.agregarProducto(productos.empanadasJQ);
         empanadasLocales.agregarProducto(productos.empanadaH);
         empanadasLocales.agregarProducto(productos.empanadaCarne);
-        empanadasLocales.agregarProducto(productos.empanadaNapolotana);
-        empanadasLocales.agregarProducto(productos.empanadasRoquefort);
+        empanadasLocales.agregarProducto(productos.empanadaNapolitana);
+        empanadasLocales.agregarProducto(productos.empanadaRoquefort);
         empanadasLocales.agregarProducto(productos.sprite);
               // Restaurante Rodriguez
-        restauranteRodriguez.agregarProducto(productos.empanadasJQ);
+        restauranteRodriguez.agregarProducto(productos.empanadaJQ);
         restauranteRodriguez.agregarProducto(productos.ravioles);
         restauranteRodriguez.agregarProducto(productos.tallarines);
-        restauranteRodriguez.agregarProducto(productos.milanezas);
+        restauranteRodriguez.agregarProducto(productos.milanesa);
         restauranteRodriguez.agregarProducto(productos.hamburguesa);
         restauranteRodriguez.agregarProducto(productos.pizzaMuzzarella);
             //Heladeria Vaticano
@@ -95,16 +95,16 @@ public class BaseDatos {
 
     // este metodo permite que la base de datos retorne un local en espesifico
     public Local getLocales(int i) {
-        Local local= AlmacenDonJose;
+        Local local= almacenDonJose;
         switch (i){
             case 1:
-                local = AlmacenDonJose;
+                local = almacenDonJose;
                 break;
             case 2:
                 local = kioscoSanMiguel;
                 break;
             case 3:
-                local =rostiseriaCucu;
+                local =rotiseriaCucu;
                 break;
             case 4:
                 local = pizzaAhora;
@@ -136,10 +136,10 @@ public class BaseDatos {
 
     public List getListaLocales(){
         List locales = new ArrayList();
-        locales.add(AlmacenDonJose.getNombre());
+        locales.add(almacenDonJose.getNombre());
         locales.add(kioscoSanMiguel.getNombre());
         locales.add(restauranteRodriguez.getNombre());
-        locales.add(rostiseriaCucu.getNombre());
+        locales.add(rotiseriaCucu.getNombre());
         locales.add(cafeteriaNeumman.getNombre());
         locales.add(heladeriaVaticano.getNombre());
         locales.add(comidasNaN.getNombre());
