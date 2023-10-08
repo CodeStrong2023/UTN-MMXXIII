@@ -4,7 +4,6 @@
 
 package com.mycompany.ejercicio2ciclos;
 
-  b vcx
 import javax.swing.JOptionPane;
 
 /**
