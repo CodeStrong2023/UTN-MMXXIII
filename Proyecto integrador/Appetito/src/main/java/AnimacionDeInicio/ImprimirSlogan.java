@@ -3,11 +3,11 @@ package AnimacionDeInicio;
 public class ImprimirSlogan {
 
     String slogan = "Tu App de Comidas!";
-    String sloganAlineado;
+    String sloganBlancos = "";
     int longitudTotal;
     int longitudSlogan;
 
-    public void alinearADerecha() {
+    public String alinearADerecha() {
         ImprimirLogo imprimirLogo = new ImprimirLogo();
         Utilidades.DeterminarLongitud determinarLongitud = new Utilidades.DeterminarLongitud();
 
@@ -23,36 +23,20 @@ public class ImprimirSlogan {
 
         // Llenar los primeros espacios de blanco
         for (int i = 0; i < longitudTotal - longitudSlogan; i++) {
-            sloganMatriz[i] = ' ';
+            sloganBlancos = sloganBlancos + " ";
         }
-
-        // Llenar los últimos espacios con el slogan ingresado
-        int l = 0;
-        for (int i = longitudTotal - longitudSlogan; i < longitudTotal; i++) {
-            sloganMatriz[i] = slogan.charAt(l);
-            l++;
-        }
-
-        sloganAlineado = new String(sloganMatriz);
-
+        return sloganBlancos;
     }
 
-    public void animarHorizontal() {
+    public void animarHorizontal() throws InterruptedException {
         alinearADerecha();
-        // Mostrar los espacios en blanco en bloque 
-//        for (int i = 0; i < longitudTotal-longitudSlogan; i++) {
-//            char caracter = sloganAlineado.charAt(i);
-//            System.out.print(caracter);
-//        }
 
+        System.out.print(sloganBlancos);
         //Mostrar los caracteres del slogan uno a uno, animando.
-        for (int j = longitudTotal - longitudSlogan; j < sloganAlineado.length(); j++) {
-            char caracter = sloganAlineado.charAt(j);
+        for (int j = 0; j < slogan.length(); j++) {
+            char caracter = slogan.charAt(j);
             System.out.print(caracter);
-            try {
                 Thread.sleep(100); // Pausa de 100 milisegundos
-            } catch (InterruptedException e) {
-            }
         }
         System.out.println(); // Salto de línea al final de la animación
     }
@@ -72,7 +56,7 @@ public class ImprimirSlogan {
         System.out.println(guirnalda[k]);
     }
 }
-    public void imprimirSlogan() {
+    public void imprimirSlogan() throws InterruptedException {
         animarHorizontal();
         ubicarGuirnalda();
     }
