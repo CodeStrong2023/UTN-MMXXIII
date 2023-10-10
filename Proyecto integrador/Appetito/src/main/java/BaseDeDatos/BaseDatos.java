@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BaseDatos {
-    Local almacenDonJose = new Local(1, "AlmacenDonJose", "Urquiza 920", 20.30, 4, "Despensa, Bebidas");
+    Local almacenDonJose = new Local(1, "Almacen Don Jose", "Urquiza 920", 20.30, 4, "Despensa, Bebidas");
     Local kioscoSanMiguel = new Local(2,"Kiosco San Miguel","Belgrano 776",15,5,"Kiosko, Despensa, Bebidas");
     Local rotiseriaCucu = new Local(3,"Rotiseria Cucu","Italia 76",10,3,"Restaurante");
     Local pizzaAhora = new Local(4,"Pizza ahora!","San Martin 96",15,4,"Restaurante");

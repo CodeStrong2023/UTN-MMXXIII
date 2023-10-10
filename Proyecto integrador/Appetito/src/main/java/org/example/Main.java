@@ -9,5 +9,8 @@ public class Main {
         AnimacionDeInicio AnimacionDeInicio = new AnimacionDeInicio();
         AnimacionDeInicio.iniciarApp();
 
+        //MENU PRINCIPAL
+        MenuPrincipal.MenuPrincipal menuPrincipal = new MenuPrincipal.MenuPrincipal();
+        menuPrincipal.menuPrincipal();
     }
 }
