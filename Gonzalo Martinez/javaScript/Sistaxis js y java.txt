@@ -56,3 +56,7 @@ Operadores Relaciones(boleano)
 >
 <=
 >=
+
+Operadores Logicos 
+And -> && Doble aspersan
+Or  -> ||

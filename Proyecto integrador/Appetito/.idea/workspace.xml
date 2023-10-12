@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="" />
+    <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Gonzalo Martinez/java/leccion 3/leccion3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Gonzalo Martinez/java/leccion 3/leccion3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gonzalo Martinez/javaScript/Sistaxis js y java.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Gonzalo Martinez/javaScript/Sistaxis js y java.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gonzalo Martinez/javaScript/leccion3/03-01-OperadoresJavaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Gonzalo Martinez/javaScript/leccion3/03-01-OperadoresJavaScript.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +73,7 @@
       <workItem from="1696788862506" duration="3058000" />
       <workItem from="1696793966664" duration="156000" />
       <workItem from="1696794419650" duration="67000" />
+      <workItem from="1697114714269" duration="313000" />
     </task>
     <servers />
   </component>
