@@ -6,7 +6,16 @@ public class Aritmetica {   //las clases se escriben en Pascalcase
     int a;
     int b;
     
+    //El constructor es un método especial
+    public Aritmetica(){ //Constructor 1 VACIO (Se crea por defecto)
+        System.out.println("Se esta ejecutando el constructor número uno");
+    }
     
+    public Aritmetica(int a, int b){ //Si creamos un constructor, debemos tener en cuenta de crear el constructor por defecto ya que no se va a crear solo.
+        this.a = a;
+        this.b = b;
+        System.out.println("Se esta ejecutando el constructor número dos");
+    }
     //Metodo
     public void sumarNumeros(){ //los metodos se escriben en camelCase
         int resultado = a + b;
