@@ -1,21 +1,7 @@
-/*
+/*Convertir el siguiente pseudociódigo a código Java:
 //MODULO: Menu categorias-------------------------------------------------------------------------------------------------------
 //Tabla: Categorias
-Funcion listaCat<-diagramaCategorias(i)
-	Definir categorias,listaCat Como Caracter;
-	Dimension categorias[100];
-	//tabla de categorias disponibles
-	categorias[0]<-"Despensas";
-	categorias[1]<-"Bebidas";
-	categorias[2]<-"Restaurantes";
-	categorias[3]<-"Heladerias";
-	categorias[4]<-"Cafeterias";
-	categorias[5]<-"Panaderias";
-	categorias[6]<-"Kioscos";
-	
-	//devolver variable con datos
-	listaCat<-categorias[i];
-FinFuncion
+
 //Menu que lista las categorias disponibles
 Funcion menuCategoria(Usuarios)
 	Definir opcion, i,j, numLocal Como Entero;
@@ -50,8 +36,11 @@ Funcion menuCategoria(Usuarios)
 FinFuncion
 
  */
+
 package CompraPorCategoria;
 
 public class MenuDeCategorias {
+
+
     
 }

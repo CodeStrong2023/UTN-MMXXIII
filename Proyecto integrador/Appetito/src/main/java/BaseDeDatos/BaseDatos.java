@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BaseDatos {
-    Local almacenDonJose = new Local(1, "Almacen Don Jose", "Urquiza 920", 20.30, 4, "Despensa, Bebidas");
-    Local kioscoSanMiguel = new Local(2,"Kiosco San Miguel","Belgrano 776",15,5,"Kiosko, Despensa, Bebidas");
-    Local rotiseriaCucu = new Local(3,"Rotiseria Cucu","Italia 76",10,3,"Restaurante");
-    Local pizzaAhora = new Local(4,"Pizza ahora!","San Martin 96",15,4,"Restaurante");
-    Local lomitos100 = new Local(5,"Lomitos 100%","Belgrano 24",15,5,"Restaurante");
-    Local empanadasLocales = new Local(6,"Empanadas Locales","Belgrano 333",25,4,"Restaurante");
-    Local restauranteRodriguez = new Local(7,"Restaurante Rodriguez","Libertad 241",15,3,"Restaurante, Bebidas");
-    Local heladeriaVaticano = new Local(8,"Heladeria Vaticano","Europa 231",5,2,"Heladeria, Cafeteria");
-    Local cafeteriaNeumman = new Local(9,"Cafeteria Neumman","España 2354",5,5,"Cafeteria, Heladeria, Panaderia");
-    Local comidasNaN = new Local(10,"Comidas NaN"," Cordoba 576",35,5,"Restaurante,Bebidas,Despensa");
+    Local almacenDonJose = new Local(1, "Almacen Don Jose", "Urquiza 920", 20.30, 4);
+    Local kioscoSanMiguel = new Local(2,"Kiosco San Miguel","Belgrano 776",15,5);
+    Local rotiseriaCucu = new Local(3,"Rotiseria Cucu","Italia 76",10,3);
+    Local pizzaAhora = new Local(4,"Pizza ahora!","San Martin 96",15,4);
+    Local lomitos100 = new Local(5,"Lomitos 100%","Belgrano 24",15,5);
+    Local empanadasLocales = new Local(6,"Empanadas Locales","Belgrano 333",25,4);
+    Local restauranteRodriguez = new Local(7,"Restaurante Rodriguez","Libertad 241",15,3);
+    Local heladeriaVaticano = new Local(8,"Heladeria Vaticano","Europa 231",5,2);
+    Local cafeteriaNeumman = new Local(9,"Cafeteria Neumman","España 2354",5,5);
+    Local comidasNaN = new Local(10,"Comidas NaN"," Cordoba 576",35,5);
 
 
     //se crea instancia de productos
     ListaProductos productos = new ListaProductos();
 
-    // esta metodo permite asignar  todos los productos a los respectivos locales
+    // este metodo permite asignar  todos los productos a los respectivos locales
     public void setProductosALocales() {
                 // almancen Don Jose
         almacenDonJose.agregarProducto(productos.aceite);
@@ -148,5 +148,56 @@ public class BaseDatos {
         locales.add(pizzaAhora.getNombre());
         return locales;
     }
+
+    ListaCategorias categorias = new ListaCategorias();
+
+    public void setCategoriasALocales() {
+        // almancen Don Jose
+        almacenDonJose.agregarCategoria(categorias.despensas);
+        almacenDonJose.agregarCategoria(categorias.bebidas);
+        // kiosko San Miguel
+
+        kioscoSanMiguel.agregarCategoria(categorias.kioscos);
+        kioscoSanMiguel.agregarCategoria(categorias.despensas);
+        kioscoSanMiguel.agregarCategoria(categorias.bebidas);
+        // Roticeria Cucu
+
+        rotiseriaCucu.agregarCategoria(categorias.restaurantes);
+
+        // Pizza ahora!!
+
+        pizzaAhora.agregarCategoria(categorias.restaurantes);
+
+        //lomitos 100%
+
+        lomitos100.agregarCategoria(categorias.restaurantes);
+
+        // Empanaads locales
+
+        empanadasLocales.agregarCategoria(categorias.restaurantes);
+
+        // Restaurante Rodriguez
+
+        restauranteRodriguez.agregarCategoria(categorias.restaurantes);
+        restauranteRodriguez.agregarCategoria(categorias.bebidas);
+        //Heladeria Vaticano
+
+        heladeriaVaticano.agregarCategoria(categorias.heladerias);
+        heladeriaVaticano.agregarCategoria(categorias.cafeterias);
+        heladeriaVaticano.agregarCategoria(categorias.panaderias);
+        // cafeteria Neuman
+
+        cafeteriaNeumman.agregarCategoria(categorias.cafeterias);
+        cafeteriaNeumman.agregarCategoria(categorias.heladerias);
+        cafeteriaNeumman.agregarCategoria(categorias.panaderias);
+
+        // Comidas Nan
+
+        comidasNaN.agregarCategoria(categorias.restaurantes);
+        comidasNaN.agregarCategoria(categorias.bebidas);
+        comidasNaN.agregarCategoria(categorias.despensas);
+
+    }
+
 
 }
