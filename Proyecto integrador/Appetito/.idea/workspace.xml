@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="Modulo Menu Principal" />
+    <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +46,14 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+=======
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
+>>>>>>> 356220577f9718de3793f95831942a1bde71c2b2
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -66,10 +74,19 @@
       <workItem from="1696449519514" duration="9663000" />
       <workItem from="1696537314632" duration="10104000" />
       <workItem from="1696597219484" duration="4266000" />
+<<<<<<< HEAD
       <workItem from="1696898759401" duration="181000" />
       <workItem from="1696899090148" duration="3123000" />
       <workItem from="1696904148114" duration="1366000" />
       <workItem from="1696972992326" duration="973000" />
+=======
+      <workItem from="1696601997022" duration="53000" />
+      <workItem from="1696702332576" duration="2804000" />
+      <workItem from="1696710344059" duration="613000" />
+      <workItem from="1696788862506" duration="3058000" />
+      <workItem from="1696793966664" duration="156000" />
+      <workItem from="1696794419650" duration="67000" />
+>>>>>>> 356220577f9718de3793f95831942a1bde71c2b2
     </task>
     <task id="LOCAL-00001" summary="Modulo Menu Principal">
       <option name="closed" value="true" />
