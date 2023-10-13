@@ -1,21 +1,27 @@
 Sintaxsis similares entre Java y JavaScript
-Operadores simplificados
+Operadores simplificados/Compuestos
 +=
 -=
 *=
 /=
+%=
+**=
 
 Operadores Aritmeticos
 +
 -
 *
 /
+%
+**// Exponente
 
 Operadores de Asignacion
 =
+Los operadores simplificados tambien asiganan
 
-Operadores de comparacion
-==
+Operadores de comparacion (boleano)
+== Revisa sin importar el tipo
+=== Revisa importando el tipo
 
 Documentantar
 //= PAra una linea de comentario
@@ -33,6 +39,24 @@ Secuencias de Escape
 
 Operador de Aumento
 ++
+Ejemplo: let z = ++a; //PreIncremento
+Ejemplo: z a=++; //PosIncremento
 
 Operador de Decremento
 --
+Ejemplo: Let z --a //predecremento
+Ejemplo: z = a-- // postDecremento
+
+Operador Distinto, Diferente (boleano)
+!= Comprueba sin tipo
+!== comprueba con tipo
+
+Operadores Relaciones(boleano)
+<
+>
+<=
+>=
+
+Operadores Logicos 
+And -> && Doble aspersan
+Or  -> ||
