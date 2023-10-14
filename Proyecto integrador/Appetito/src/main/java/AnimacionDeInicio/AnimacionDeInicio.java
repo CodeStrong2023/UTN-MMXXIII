@@ -17,7 +17,7 @@ public class AnimacionDeInicio {
 
         //Mostrar logo
         ImprimirLogo ImprimirLogo = new ImprimirLogo();
-        ImprimirLogo.imprimirLogo();
+        ImprimirLogo.mostrarLogo();
 
         // Mostrar Slogan
         ImprimirSlogan ImprimirSlogan = new ImprimirSlogan();

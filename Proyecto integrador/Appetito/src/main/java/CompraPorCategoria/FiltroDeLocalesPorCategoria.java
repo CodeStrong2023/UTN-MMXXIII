@@ -1,39 +1,52 @@
-/*
-//Modulo: Mostrar locales por categoria elegida --------------------------------------------------------------------------------
-Funcion numLocal<-mostrarLocalesPorCategoria(eleccion)
-	Definir limit,i,categoria,id, eleccionLocal, numLocal Como Entero;	
-	Definir nombreCat Como Caracter;
-	//se determina la eleccion del usuario como la categoria a trabajar
-	categoria<-eleccion;
-	//dado que los datos vienen en formato carater, se convierte el limite especifico de la categoria en numero
-	limit<-ConvertirANumero(listaCategorias(categoria,0,1));
-	//se llama a la tabla de categorias para mostrar su nombre segun la eleccion
-	nombreCat<-diagramaCategorias(categoria-1);
-	Escribir nombreCat;
-	
-	//Se itera el llamado a la funcion que lista los locales segun la categoria elegida
-	//y se muestran en pantalla para la proxima eleccion del usuario
-	Para i<-0 Hasta limit-1 Hacer
-		id<-(ConvertirANumero(listaCategorias(categoria,i,0))-1);
-		Escribir (i+1),". ", ConstruccionBD(id,1);
-	FinPara
-	
-	Escribir "Elija un local: ";
-	Leer eleccionLocal;    
-	
-	Para i<-0 Hasta eleccionLocal-1 Hacer
-		id<-(ConvertirANumero(listaCategorias(categoria,i,0))-1);
-		numLocal<-ConvertirANumero(ConstruccionBD(id,0));
-	FinPara
-	
-FinFuncion
- */
+
 package CompraPorCategoria;
 
-/**
- *
- * @author Marie
- */
+import BaseDeDatos.BaseDatos;
+import BaseDeDatos.ListaCategorias;
+import Menus.MenuUI;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
 public class FiltroDeLocalesPorCategoria {
-    
-}
+
+    MenuUI menuUI = new MenuUI();
+    List<String> localesXCategoria = new ArrayList<>();
+    List<Consumer<String>> opciones = new ArrayList<>();
+
+    public List<String> filtrarLocalesPorCategoria(Integer opcion, ListaCategorias listaCategorias) {
+        BaseDatos baseDatos = new BaseDatos();
+        //devolver listaCategorias[opcion]
+        String categoriaElegida = listaCategorias.listaC.get(opcion);
+        String index = null;
+
+        //recorrer todas las categorias de cada local y devolverlas
+        for (int i = 1; i <= baseDatos.getListaLocales().size(); i++) {
+            for (int j = 0; j < baseDatos.getLocales(i).getCategoria().size(); j++) {
+                if (baseDatos.getLocales(i).getCategoria().get(j) == categoriaElegida) {
+                    index = localesXCategoria.size() + 1 + "";
+                    String aux = index + " - " + baseDatos.getLocales(i).getNombre();
+                    localesXCategoria.add(aux);
+                    System.out.println(aux);
+                }
+            }
+        }
+
+        return localesXCategoria;
+    }
+
+
+    public List<Consumer<String>> metodosFiltroCategorias() {
+
+        //  ACA VA EL METODO QUE TIENE QUE ARMAR FRANCO PARA QUE LLEVE AL LOCAL
+
+        return opciones;
+    }
+        public void filtroDeLocalesPorCategoria() {
+            metodosFiltroCategorias();
+            MenuUI menu = new MenuUI();
+            menu.mostrarMenu(localesXCategoria, opciones);
+        }
+
+    }

@@ -1,12 +1,9 @@
-/*MODULO: Menu Principal--------------------------------------------------------------------------------------------------------menu principal */
+package Menus;/*MODULO: Menu Principal--------------------------------------------------------------------------------------------------------menu principal */
 
 import java.util.Scanner;
 
-public class MenuLogin {
 
-    public static void main(String[] args) {
-        menuLogin();
-    }
+public class MenuLogin {
 
     public static String[][] Usuarios = new String[12][2];
     public static int X = 0;
@@ -106,7 +103,7 @@ public class MenuLogin {
         return V;
     }
 
-    public static void menuLogin() {
+    public void menuLogin() {
         String Usuario, Contrasena, Pago, Direccion, Telefono, Correo, UsuarioAdm, ContrasenaAdm;
         int Op;
 

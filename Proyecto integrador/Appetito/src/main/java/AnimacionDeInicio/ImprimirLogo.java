@@ -45,10 +45,6 @@ public class ImprimirLogo {
         }
     }
 
-    public void imprimirLogo() throws InterruptedException {
-        mostrarLogo();
-    }
-
     //constructor
     public ImprimirLogo() {
     }

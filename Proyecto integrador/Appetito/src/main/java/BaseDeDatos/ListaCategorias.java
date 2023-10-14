@@ -1,12 +1,29 @@
 package BaseDeDatos;
 
-public class ListaCategorias {
+import java.util.ArrayList;
+import java.util.List;
 
-    Categoria despensas = new Categoria("Despensas");
-    Categoria bebidas = new Categoria("Bebidas");
-    Categoria restaurantes = new Categoria("Restaurantes");
-    Categoria heladerias = new Categoria("Heladerias");
-    Categoria cafeterias = new Categoria("Cafeterias");
-    Categoria panaderias = new Categoria("Panaderias");
-    Categoria kioscos = new Categoria("Kioscos");
+public class ListaCategorias {
+    public List<String> listaC;
+
+   public void iniciarCategorias(){
+        listaC.add("Despensas");
+        listaC.add("Bebidas");
+        listaC.add("Restaurantes");
+        listaC.add("Heladerias");
+        listaC.add("Cafeterias");
+        listaC.add("Panaderias");
+        listaC.add("Kioscos");
+    }
+    public void mostrarCategorias(){
+
+        for (int i = 0; i < listaC.size(); i++) {
+            System.out.println(i+1 + " - " + listaC.get(i));
+        }
+    }
+
+    public ListaCategorias() {
+        this.listaC = new ArrayList<>();
+        iniciarCategorias();
+    }
 }

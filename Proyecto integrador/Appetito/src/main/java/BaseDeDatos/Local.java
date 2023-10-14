@@ -9,7 +9,7 @@ public class Local {
     private String direccion;
     private double tiempoEspera;
     private int puntuacion;
-    private List<Categoria> categoria;
+    private List<String> categoria;
 
     private List<Producto> productos;  // Lista de productos del local
 
@@ -22,11 +22,11 @@ public class Local {
         return productos;
     }
     //permite agregar categorias
-    public void agregarCategoria(Categoria categoria) {
-        categoria.add(categoria);
+    public void agregarCategoria(String categoriaP) {
+        this.categoria.add(categoriaP);
     }
     //permite acceder a categorias del local
-    public List<Categoria> getCategoria() {
+    public List<String> getCategoria() {
         return categoria;
     }
     //constructor
@@ -36,7 +36,7 @@ public class Local {
         this.direccion = direccion;
         this.tiempoEspera = tiempoEspera;
         this.puntuacion = puntuacion;
-        this.categoria = new ArrayList<>();
+        this.categoria = new ArrayList<String>();
         this.productos = new ArrayList<>();
     }
     ////  metodo to String devuelve datos ordenados del local
@@ -96,7 +96,7 @@ public class Local {
     }
 
 
-    public void setCategoria(List<Categoria> categoria) {
+    public void setCategoria(List<String> categoria) {
         this.categoria = categoria;
     }
 
