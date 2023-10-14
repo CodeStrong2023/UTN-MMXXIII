@@ -26,9 +26,6 @@ public class AnimacionDeInicio {
         //esperar 2 segundos
         Thread.sleep(2000);
 
-        //Limpiar pantalla
-        LimpiarPantalla LimpiarPantalla = new LimpiarPantalla();
-        LimpiarPantalla.limpiarPantalla();
 
 
     }
