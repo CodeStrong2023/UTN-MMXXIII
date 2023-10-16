@@ -9,7 +9,7 @@ public class Local {
     private String direccion;
     private double tiempoEspera;
     private int puntuacion;
-    private String categoria;
+    private List<String> categoria;
 
     private List<Producto> productos;  // Lista de productos del local
 
@@ -21,14 +21,22 @@ public class Local {
     public List<Producto> getProductos() {
         return productos;
     }
+    //permite agregar categorias
+    public void agregarCategoria(String categoriaP) {
+        this.categoria.add(categoriaP);
+    }
+    //permite acceder a categorias del local
+    public List<String> getCategoria() {
+        return categoria;
+    }
     //constructor
-    public Local(int id, String nombre, String direccion, double tiempoEspera, int puntuacion, String categoria) {
+    public Local(int id, String nombre, String direccion, double tiempoEspera, int puntuacion) {
         this.id = id;
         this.nombre = nombre;
         this.direccion = direccion;
         this.tiempoEspera = tiempoEspera;
         this.puntuacion = puntuacion;
-        this.categoria = categoria;
+        this.categoria = new ArrayList<String>();
         this.productos = new ArrayList<>();
     }
     ////  metodo to String devuelve datos ordenados del local
@@ -38,9 +46,9 @@ public class Local {
                 "id=" + id +
                 ", nombre=" + nombre + '\'' +
                 ", direccion='" + direccion + '\'' +
-                ", TiempoEspera=" + tiempoEspera +
+                ", tiempoEspera=" + tiempoEspera +
                 ", puntuacion=" + puntuacion +
-                ", Categoria='" + categoria + '\'' +
+                ", categoria=" + categoria + '\'' +
                 ", productos=" + productos +
                 '}';
     }
@@ -87,11 +95,8 @@ public class Local {
         this.puntuacion = puntuacion;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(List<String> categoria) {
         this.categoria = categoria;
     }
 

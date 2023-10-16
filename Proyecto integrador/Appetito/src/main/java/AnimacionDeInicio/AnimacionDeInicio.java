@@ -6,6 +6,7 @@
 package AnimacionDeInicio;
 import Utilidades.LimpiarPantalla;
 
+
 public class AnimacionDeInicio {
 
     public AnimacionDeInicio() {
@@ -16,15 +17,15 @@ public class AnimacionDeInicio {
 
         //Mostrar logo
         ImprimirLogo ImprimirLogo = new ImprimirLogo();
-        ImprimirLogo.imprimirLogo();
+        ImprimirLogo.mostrarLogo();
 
         // Mostrar Slogan
         ImprimirSlogan ImprimirSlogan = new ImprimirSlogan();
         ImprimirSlogan.imprimirSlogan();
 
-        //Limpiar pantalla
-        LimpiarPantalla LimpiarPantalla = new LimpiarPantalla();
-        LimpiarPantalla.limpiarPantalla();
+        //esperar 2 segundos
+        Thread.sleep(2000);
+
 
 
     }
