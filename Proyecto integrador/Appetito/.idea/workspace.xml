@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="Modulo Compra Por categoria" />
+    <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="Modulo Compra Por categoria">
+      <change beforePath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/Aritmetica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/Aritmetica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/PruebaAritmetica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/PruebaAritmetica.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +111,7 @@
       <workItem from="1697301811294" duration="469000" />
       <workItem from="1697302384478" duration="303000" />
       <workItem from="1697481301241" duration="44000" />
+      <workItem from="1697492477821" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="Modulo Menu Principal">
       <option name="closed" value="true" />

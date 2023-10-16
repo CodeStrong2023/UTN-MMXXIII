@@ -6,8 +6,8 @@ public class Persona {
 //Pascal Case
     
     //Atributos (caracteristicas)
-    String nombre;
-    String apellido;
+    public String nombre;
+    public String apellido;
     
     //CLASE 4
     //Metodos (acciones)
