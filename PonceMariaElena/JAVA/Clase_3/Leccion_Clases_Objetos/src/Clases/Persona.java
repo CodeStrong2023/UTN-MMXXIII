@@ -9,8 +9,9 @@ public class Persona {
     String nombre;
     String apellido;
     
+    //CLASE 4
     //Metodos (acciones)
-    public void obtenerInformacion(){
+    public void obtenerInformacion(){ //camelCase
         System.out.println("Nombre: "+nombre);
         System.out.println("Apellido: "+apellido);
     }
