@@ -5,6 +5,7 @@ public class Producto {
     private String Descripcion;
     private double Precio;
     private int Stock;
+    private int Cantidad;
 
 
     public Producto(String nombre, String descripcion, double precio, int stock) {
@@ -32,6 +33,14 @@ public class Producto {
 
     public double getPrecio() {
         return Precio;
+    }
+
+    public int getCantidad() {
+        return Cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        Cantidad = cantidad;
     }
 
     public void setPrecio(double precio) {
