@@ -31,6 +31,6 @@ public class PruebaCarrito {
         carrito.eliminarDeCarrito();
 
 }
-
+ esto es una prueba
 */
 }
