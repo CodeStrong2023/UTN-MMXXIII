@@ -109,28 +109,28 @@ public class BaseDatos {
                 local = kioscoSanMiguel;
                 break;
             case 3:
-                local = rotiseriaCucu;
-                break;
-            case 4:
-                local = pizzaAhora;
-                break;
-            case 5:
-                local = lomitos100;
-                break;
-            case  6:
-                local = empanadasLocales;
-                break;
-            case 7:
                 local = restauranteRodriguez;
                 break;
-            case 8:
-                local = heladeriaVaticano;
+            case 4:
+                local = rotiseriaCucu;
                 break;
-            case 9:
+            case 5:
                 local = cafeteriaNeumman;
                 break;
-            case 10:
+            case  6:
+                local = heladeriaVaticano;
+                break;
+            case 7:
                 local = comidasNaN;
+                break;
+            case 8:
+                local = lomitos100;
+                break;
+            case 9:
+                local = empanadasLocales;
+                break;
+            case 10:
+                local = pizzaAhora;
                 break;
         }
         return local;
