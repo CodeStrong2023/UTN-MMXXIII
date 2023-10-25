@@ -6,10 +6,14 @@ public class Empleado extends Persona { //se coloca extends para indicar que es 
     private double sueldo;
     private static int contadorEmpleados; //Es para incrementar
     
-    //Constructor
-    public Empleado(String nombre, double sueldo) {
-        super(nombre);
+    //Constructores
+    public Empleado(){ //Constructor 1
         this.idEmpleado = ++Empleado.contadorEmpleados; //no necesitamos el setidEmpleado ya que se estara modificando solo con esta linea de codigo.
+    }
+    public Empleado(String nombre, double sueldo) { //Constructor 2
+        //super(nombre);
+        this(); // Estamos llamando desde aqui al constructor vacio(llamar a un constructor interno)
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
