@@ -14,11 +14,17 @@ public class FiltroMenuLocal {
         for (int i = 0; base.getListaLocales().size()> i; i++){
             System.out.println((i+1)+" "+base.getListaLocales().get(i));
         }
-        System.out.println("¡Elija su local de preferencia!: ");
         elegirLocal();
     }
     public void elegirLocal(){   //eleccion del local
+        System.out.println("¡Elija su local de preferencia!: ");
         int eleccionLocal = Integer.parseInt(entrada.nextLine());
-        mostrarMenu.mostrarMenu(eleccionLocal);
+        if (eleccionLocal >= 1 && eleccionLocal <=10){
+            mostrarMenu.mostrarMenu(eleccionLocal);
+        }
+        else{
+            System.out.println("Numero de local erroneo, vuelva a ingresar.");
+            elegirLocal();
+        }
     }
 }

@@ -1,7 +1,7 @@
 package Carrito;
 
 import BaseDeDatos.Producto;
-
+import static Menus.MenuLogin.menuPrincipal;
 import java.util.List;
 import java.util.Scanner;
 
@@ -111,12 +111,14 @@ public class Carrito {  protected List<Producto> ListaCompra;
         System.out.println("1 - Confirmar pedido.");
         System.out.println("2 - Eliminar un producto.");
         System.out.println("3 - Cambiar la cantidad de un producto.");
-        System.out.println("4 - Salir de la aplicación.");
+        System.out.println("4 - Volver al Menu Principal.");
+        System.out.println("5 - Salir de la aplicación.");
 
         opcion=scanner.nextInt();
         switch (opcion){
             case (1):
                 System.out.println(" Gracias por su compra");
+                System. exit(0);
                 break;
             case (2):
                 eliminarDeCarrito();
@@ -125,7 +127,12 @@ public class Carrito {  protected List<Producto> ListaCompra;
                 CambiarCantidad();
                 break;
             case (4):
+                menuPrincipal();
+                break;
+            case (5):
                 System.out.println("gracias por usar la aplicacion");
+                System. exit(0);
+                break;
         }
         scanner.close();
     }
