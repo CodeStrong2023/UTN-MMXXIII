@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="Modulo Compra Por categoria">
-      <change beforePath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/Aritmetica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/Aritmetica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/PruebaAritmetica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_4/Aritmetica/src/Operaciones/PruebaAritmetica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_2/Ejercicios_Ciclos_11/Ciclos11/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_2/Ejercicios_Ciclos_11/Ciclos11/src/main/java/com/mycompany/ciclos11/Ciclos11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PonceMariaElena/JAVA/Clase_2/Ejercicios_Ciclos_11/Ciclos11/src/main/java/com/mycompany/ciclos11/Ejercicio11.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +38,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "PonceElena",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\utn\Proyecto integrador\Appetito\src\main\java" />
@@ -112,6 +113,7 @@
       <workItem from="1697302384478" duration="303000" />
       <workItem from="1697481301241" duration="44000" />
       <workItem from="1697492477821" duration="17000" />
+      <workItem from="1698612936382" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="Modulo Menu Principal">
       <option name="closed" value="true" />

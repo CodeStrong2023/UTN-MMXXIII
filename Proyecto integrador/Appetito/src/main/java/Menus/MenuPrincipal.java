@@ -1,13 +1,19 @@
 /*/MODULO: Menu Principal-------------------------------------------/*/
 package Menus;
+import CompraPorLocal.FiltroMenuLocal;
+
 import java.util.*;
 import java.util.function.Consumer;
 
 public class MenuPrincipal {
     Consumer<String>[] opciones;
-    MenuLocales menuLocales = new MenuLocales();
+    FiltroMenuLocal menu = new FiltroMenuLocal();
+
     MenuDeCategorias menuCategorias = new MenuDeCategorias(this);
-    MenuLogin menuLogin = new MenuLogin();
+    MenuLogin menuLogin = new MenuLogin(this);
+
+    public String procedencia = "MP";
+
 
     Map<String, String> menuPrincipal = new HashMap<String, String>() {{
         put("1", "1 - Comprar por local");
@@ -15,11 +21,12 @@ public class MenuPrincipal {
         put("3", "3 - Opciones de Usuario");
     }};
 
+
     public Consumer[] metodosMenuPrincipal() {
         opciones = new Consumer[]{
-                opcion -> menuLocales.menuLocales(),         // Opción 1
+                opcion -> menu.mostrarLocal(),         // Opción 1
                 opcion -> menuCategorias.menuCategorias(),      // Opción 2
-                opcion -> menuLogin.menuLogin()             // Opción 3
+                opcion -> menuLogin.menuLogin(procedencia)             // Opción 3
         };
         return opciones;
     }
@@ -27,6 +34,9 @@ public class MenuPrincipal {
     public void menuPrincipal() {
         MenuUI menu = new MenuUI();
         menu.mostrarMenu(menuPrincipal, metodosMenuPrincipal());
-
+    }
+    public void menuPrincipal(MenuLogin menuLogin) {
+        this.menuLogin = menuLogin;
+        menuPrincipal();
     }
 }
