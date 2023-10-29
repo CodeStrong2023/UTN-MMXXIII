@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="Modulo Compra Por categoria">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4d1adeab-72fe-4bcd-b93d-4d32afdd047d" name="Changes" comment="Modulo Compra Por categoria" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,6 +138,7 @@
       <workItem from="1698589624627" duration="11725000" />
       <workItem from="1698607475456" duration="4536000" />
       <workItem from="1698612100218" duration="71000" />
+      <workItem from="1698615313540" duration="1241000" />
     </task>
     <task id="LOCAL-00001" summary="Modulo Menu Principal">
       <option name="closed" value="true" />

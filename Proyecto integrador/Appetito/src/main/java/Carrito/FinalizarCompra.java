@@ -24,16 +24,16 @@ public class FinalizarCompra {
         System.out.println("|   Nombre de Usuario  "+  llenarEspacio(usuarios[0][1], 44)+"|");
         System.out.println(linea);
         if (usuarios[0][1]=="admin"){
-            System.out.println("|   Dirección  "+ llenarEspacio(usuarios[9][1], 52)+"|");
+            System.out.println("|   Dirección  "+ llenarEspacio(usuarios[9][1], 54)+"|");
             carrito.mostrarCarrito();
-            System.out.println("|Medio de pago  "+ llenarEspacio(usuarios[8][1], 52)+"|");
+            System.out.println("| Medio de pago  "+ llenarEspacio(usuarios[8][1], 50)+"|");
             System.out.println(linea);
             System.out.println("|                                           | Total   | $" + llenarEspacio(Double.toString(carrito.sumar(arrayCarrito)),10 )  +"|");
             System.out.println(linea);
         }else {
-            System.out.println("|   Dirección  "+ llenarEspacio(usuarios[3][1], 52)+"|");
+            System.out.println("|   Dirección  "+ llenarEspacio(usuarios[3][1], 54)+"|");
             carrito.mostrarCarrito();
-            System.out.println("Medio de pago  "+ llenarEspacio(usuarios[2][1], 52)+"|");
+            System.out.println("| Medio de pago  "+ llenarEspacio(usuarios[2][1], 50)+"|");
             System.out.println(linea);
             System.out.println("|                                           | Total   | $" + llenarEspacio(Double.toString(carrito.sumar(arrayCarrito)),10 )  +"|");
             System.out.println(linea);
