@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PruebaCarrito {
-  /* public static void main(String[] args) {
-        BaseDatos base = new BaseDatos();
+   public static void main(String[] args) {
+      /*  BaseDatos base = new BaseDatos();
         // rellena la base de datos
         base.setProductosALocales();
         List<Producto> ListaPrueba = new ArrayList<>();
@@ -26,11 +26,10 @@ public class PruebaCarrito {
         //obtener u1 producto
         String prueba = "prueba";
         Carrito carrito = new Carrito(ListaPrueba,prueba);
-        carrito.mostrarCarrito();
-        carrito.sumar(ListaPrueba);
-        carrito.eliminarDeCarrito();
+        carrito.CarritoDeCompras();
+*/
+
 
 }
- esto es una prueba
-*/
+
 }

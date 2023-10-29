@@ -84,6 +84,7 @@ public class MenuLocal {
         while (true){
             if (eleccionCantidad <= base.getLocales(eleccionLocal).getProductos().get(eleccionProducto).getStock()){
                 arrayCarrito.get(contadorProducto).setCantidad(eleccionCantidad);
+                // set stock
                 break;
             }
             else {
@@ -94,7 +95,7 @@ public class MenuLocal {
         }
         
         System.out.println("Desea agregar otro producto? (Si o No)");
-        int opcion = entrada.nextInt();
+        int opcion = Integer.parseInt(entrada.nextLine());
         System.out.println(opcion);
         if (opcion == 1) {
             System.out.println("metodo");

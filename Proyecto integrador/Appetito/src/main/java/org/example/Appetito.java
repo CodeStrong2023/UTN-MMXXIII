@@ -9,7 +9,7 @@ public class Appetito {
 
     public MenuPrincipal Appetito() throws InterruptedException {
         //ANIMACION
-        animacionDeInicio.iniciarApp();
+     //   animacionDeInicio.iniciarApp();
         //MENU PRINCIPAL
         menuPrincipal.menuPrincipal();
         return menuPrincipal;

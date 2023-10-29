@@ -1,12 +1,21 @@
 package Carrito;
 
 import BaseDeDatos.Producto;
+import Menus.MenuLogin;
+import Menus.MenuPrincipal;
+import Utilidades.ConectorLogin;
 
+import java.sql.SQLOutput;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Carrito {  protected List<Producto> ListaCompra;
-    protected String local;
+    ConectorLogin conector = ConectorLogin.getInstance(null);
+    String[][] usuarios = conector.getUsuarios();
+    public String local;
+    public boolean paso = true;
+    MenuPrincipal menuPrincipal;
     public double sumar (List<Producto> ListaPrueba){
         double total=0;
         for (int i= 0; i<ListaPrueba.size();i++){total+=ListaPrueba.get(i).getPrecio()*ListaCompra.get(i).getCantidad();}
@@ -41,9 +50,13 @@ public class Carrito {  protected List<Producto> ListaCompra;
         System.out.println(linea);
         System.out.println("|                                           | Total   | $" +     llenarEspacio(Double.toString(sumar(ListaCompra)),10 )  +"|");
         System.out.println(linea);
-        System.out.println(" ");
 
-        MenuCarrito();
+
+        if (paso){
+            System.out.println(" ");
+            MenuCarrito();
+        }
+
     }
 
     public void eliminarDeCarrito() {
@@ -104,28 +117,33 @@ public class Carrito {  protected List<Producto> ListaCompra;
     }
 
 
-
     public void MenuCarrito(){
+        String procedencia = "CC";
         int opcion;
         Scanner scanner = new Scanner(System.in);
         System.out.println("1 - Confirmar pedido.");
         System.out.println("2 - Eliminar un producto.");
-        System.out.println("3 - Cambiar la cantidad de un producto.");
+        System.out.println("3 - Cambiar la cantidad de un product o.");
         System.out.println("4 - Salir de la aplicación.");
 
         opcion=scanner.nextInt();
-        switch (opcion){
-            case (1):
-                System.out.println(" Gracias por su compra");
-                break;
-            case (2):
-                eliminarDeCarrito();
-                break;
-            case(3):
-                CambiarCantidad();
-                break;
-            case (4):
-                System.out.println("gracias por usar la aplicacion");
+
+        switch (opcion) {
+            case (1) -> {
+                if (usuarios != null) {
+                    paso = false;
+                    FinalizarCompra finalizarCompra = new FinalizarCompra(this);
+                    FinalizarCompra.imprimir(local, ListaCompra);
+                } else {
+                    paso = false;
+                    MenuLogin menuLogin = new MenuLogin(this);
+                    System.out.println("Debe iniciar sesion para confirmar su compra");
+                    menuLogin.menuLogin(procedencia);
+                }
+            }
+            case (2) -> eliminarDeCarrito();
+            case (3) -> CambiarCantidad();
+            case (4) -> System.out.println("gracias por usar la aplicacion");
         }
         scanner.close();
     }
@@ -139,6 +157,11 @@ public class Carrito {  protected List<Producto> ListaCompra;
 
     public void CarritoDeCompras (){
         mostrarCarrito();
+
+    }
+
+    public List<Producto> getListaCompra() {
+        return ListaCompra;
     }
 }
 //esto es una prueba
