@@ -1,5 +1,11 @@
 package Menus;/*MODULO: Menu Principal--------------------------------------------------------------------------------------------------------menu principal */
 
+
+import Carrito.Carrito;
+import Carrito.FinalizarCompra;
+import Utilidades.ConectorLogin;
+
+
 import java.util.Scanner;
 
 
@@ -10,6 +16,17 @@ public class MenuLogin {
     public static int I = 0;
     public static boolean VC = false;
     public static boolean C = false;
+    private  MenuPrincipal menuPrincipal;
+    private  Carrito carrito;
+    String prueba = "prueba BASE";
+    public String getPrueba() {
+        return prueba;
+    }
+
+
+    public MenuLogin( Carrito carrito) {
+        this.carrito = carrito;
+    }
 
     public static void Guardar(String Usuario, String Contrasena, String Pago, String Direccion, String Telefono, String Correo) {
         Usuarios[0][0] = "Nombre de usuario = ";
@@ -29,7 +46,7 @@ public class MenuLogin {
 
         Usuarios[5][0] = "Correo electrónico = ";
         Usuarios[5][1] = Correo;
-
+// usuario defaul de pruebas
         Usuarios[6][0] = "Nombre de usuario Admin = ";
         Usuarios[6][1] = Usuario;
 
@@ -103,11 +120,13 @@ public class MenuLogin {
         return V;
     }
 
-    public void menuLogin() {
+    public void menuLogin(String procedencia) {
         String Usuario, Contrasena, Pago, Direccion, Telefono, Correo, UsuarioAdm, ContrasenaAdm;
         int Op;
 
         Scanner scanner = new Scanner(System.in);
+        ConectorLogin conector = ConectorLogin.getInstance(null);
+        FinalizarCompra finalizarCompra = new FinalizarCompra(carrito);
 
         Usuario = " ";
         Contrasena = " ";
@@ -144,7 +163,9 @@ public class MenuLogin {
                             Pago = scanner.next();
 
                             System.out.print("Ingrese su dirección: ");
-                            Direccion = scanner.next(); /* PROBLEMA EN INGRESO DE DIRECCIÓN CON ESPACIOS */
+                            Direccion = scanner.next();
+                            Direccion += scanner.next();
+                            /* PROBLEMA EN INGRESO DE DIRECCIÓN CON ESPACIOS */
 
                             System.out.print("Ingrese su número de teléfono: ");
                             Telefono = scanner.next();
@@ -191,10 +212,22 @@ public class MenuLogin {
                         String inputContrasena = scanner.next();
 
                         if (Usuarios[0][1].equals(inputUsuario) && Usuarios[1][1].equals(inputContrasena)) {
-                            System.out.println("Inicio de sesión exitoso");
-                            System.out.println(" ");
-                            Op = 4;
-                            menuPrincipal(); /* PASAR A MENU PRINCIPAL */
+
+                            if(!procedencia.equals("CC")){
+                                    System.out.println("Inicio de sesión exitoso");
+                                    System.out.println(" ");
+                                    Op = 4;
+                                    conector.setUsuarios(Usuarios);
+                                    menuPrincipal.menuPrincipal();
+                            }else{
+                                System.out.println("Inicio de sesión exitoso");
+                                System.out.println(" ");
+                                conector.setUsuarios(Usuarios);
+
+                                FinalizarCompra.imprimir(carrito.local,carrito.getListaCompra());
+                                Op = 4;
+                            }
+
                         } else {
                             System.out.println("Nombre de usuario o contraseña incorrectos");
                             System.out.println(" ");
@@ -213,14 +246,21 @@ public class MenuLogin {
                     System.out.print("Ingrese su contraseña Admin (admin123#): ");
                     String inputContrasenaAdmin = scanner.next();
 
+
                     if (inputUsuarioAdmin.equals("admin") && inputContrasenaAdmin.equals("admin123#")) {
                         Guardar(inputUsuarioAdmin, inputContrasenaAdmin, Pago, Direccion, Telefono, Correo);
                         Usuarios[0][1] = inputUsuarioAdmin;
                         Usuarios[1][1] = inputContrasenaAdmin;
+                        conector.setUsuarios(Usuarios);
                         System.out.println("Inicio de sesión exitoso");
                         System.out.println(" ");
                         Op = 4;
-                        menuPrincipal(); /* PASAR A MENU PRINCIPAL */
+                        conector.setUsuarios(Usuarios);
+                        if ( !procedencia.equals("CC")){
+                            menuPrincipal.menuPrincipal();
+                        } else {
+                            FinalizarCompra.imprimir(carrito.local,carrito.getListaCompra());
+                        }
                     } else {
                         System.out.println("Nombre de usuario o contraseña incorrectos");
                         System.out.println(" ");
@@ -239,8 +279,11 @@ public class MenuLogin {
         } while (Op != 4);
     }
 
-    public static void menuPrincipal() {
-        // Aquí puedes implementar el código para el menú principal, ya que no está proporcionado en el código original.
+    public static String[][] getUsuarios() {
+        return Usuarios;
+    }
+    public MenuLogin(MenuPrincipal menuPrincipal) {
+        this.menuPrincipal = menuPrincipal;
     }
 
     public static void salir() {
