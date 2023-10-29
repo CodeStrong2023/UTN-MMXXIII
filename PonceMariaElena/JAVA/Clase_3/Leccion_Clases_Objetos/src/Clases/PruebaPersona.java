@@ -2,6 +2,7 @@
 package Clases;
 
 public class PruebaPersona {
+    //CLASE 4
     public static void main(String[] args) {
         Persona persona1 = new Persona(); //lamar al constructor que permite asignar valor, es un metodo especial para crear objetos
         persona1.nombre = "Ariel"; // El valor hexadecimal normalmente comienza con 0x, es el lugar de memoria reservado

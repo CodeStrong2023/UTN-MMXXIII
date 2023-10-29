@@ -6,11 +6,12 @@ public class Persona {
 //Pascal Case
     
     //Atributos (caracteristicas)
-    String nombre;
-    String apellido;
+    public String nombre;
+    public String apellido;
     
+    //CLASE 4
     //Metodos (acciones)
-    public void obtenerInformacion(){
+    public void obtenerInformacion(){ //camelCase
         System.out.println("Nombre: "+nombre);
         System.out.println("Apellido: "+apellido);
     }
