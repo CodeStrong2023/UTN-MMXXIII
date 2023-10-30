@@ -91,6 +91,7 @@ public class MenuUI {
         }
         scanner.close();
     }
+
     public void mostrarMenu(Map<String, String> menu, List<Consumer<String>> metodos) {
         Scanner scanner = new Scanner(System.in);
 

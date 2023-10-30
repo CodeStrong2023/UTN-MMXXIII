@@ -109,28 +109,28 @@ public class BaseDatos {
                 local = kioscoSanMiguel;
                 break;
             case 3:
-                local = restauranteRodriguez;
+                local = rotiseriaCucu ;
                 break;
             case 4:
-                local = rotiseriaCucu;
+                local = pizzaAhora  ;
                 break;
             case 5:
-                local = cafeteriaNeumman;
+                local = lomitos100 ;
                 break;
             case  6:
-                local = heladeriaVaticano;
+                local = empanadasLocales ;
                 break;
             case 7:
-                local = comidasNaN;
+                local = restauranteRodriguez ;
                 break;
             case 8:
-                local = lomitos100;
+                local = heladeriaVaticano;
                 break;
             case 9:
-                local = empanadasLocales;
+                local = cafeteriaNeumman;
                 break;
             case 10:
-                local = pizzaAhora;
+                local = comidasNaN;
                 break;
         }
         return local;
@@ -141,14 +141,14 @@ public class BaseDatos {
         List locales = new ArrayList();
         locales.add(almacenDonJose.getNombre());
         locales.add(kioscoSanMiguel.getNombre());
-        locales.add(restauranteRodriguez.getNombre());
         locales.add(rotiseriaCucu.getNombre());
-        locales.add(cafeteriaNeumman.getNombre());
-        locales.add(heladeriaVaticano.getNombre());
-        locales.add(comidasNaN.getNombre());
+        locales.add(pizzaAhora.getNombre());
         locales.add(lomitos100.getNombre());
         locales.add(empanadasLocales.getNombre());
-        locales.add(pizzaAhora.getNombre());
+        locales.add(restauranteRodriguez.getNombre());
+        locales.add(heladeriaVaticano.getNombre());
+        locales.add(cafeteriaNeumman.getNombre());
+        locales.add(comidasNaN.getNombre());
         return locales;
     }
 //Construccion de lista de categorias
