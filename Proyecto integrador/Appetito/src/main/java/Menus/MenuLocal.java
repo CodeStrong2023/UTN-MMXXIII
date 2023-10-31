@@ -62,7 +62,7 @@ public class MenuLocal {
         }
 
         public void agregarMasProducto ( int eleccionLocal){
-            System.out.println("Desea agregar otro producto? 1(SI) o 2(No)");
+            System.out.println("Desea agregar otro producto? 1(SI) o 2(NO)");
             int opcion = Integer.parseInt(entrada.nextLine());
             switch (opcion) {
                 case 1:

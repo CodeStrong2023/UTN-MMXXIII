@@ -28,7 +28,7 @@ public class MenuUI {
         }
 
         System.out.println(menuUI.get("opcionSalir"));
-        System.out.print(menuUI.get("solicitarOpcion"));
+        System.out.println(menuUI.get("solicitarOpcion"));
 
         //Leer opcion
         int opcion = scanner.nextInt();

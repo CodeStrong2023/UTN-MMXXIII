@@ -5,16 +5,16 @@ import java.util.List;
 
 public class BaseDatos {
 
-    Local almacenDonJose = new Local(1, "Almacen Don Jose", "Urquiza 920", 20.30, 4);
-    Local kioscoSanMiguel = new Local(2,"Kiosco San Miguel","Belgrano 776",15,5);
-    Local rotiseriaCucu = new Local(3,"Rotiseria Cucu","Italia 76",10,3);
-    Local pizzaAhora = new Local(4,"Pizza ahora!","San Martin 96",15,4);
-    Local lomitos100 = new Local(5,"Lomitos 100%","Belgrano 24",15,5);
-    Local empanadasLocales = new Local(6,"Empanadas Locales","Belgrano 333",25,4);
-    Local restauranteRodriguez = new Local(7,"Restaurante Rodriguez","Libertad 241",15,3);
-    Local heladeriaVaticano = new Local(8,"Heladeria Vaticano","Europa 231",5,2);
-    Local cafeteriaNeumman = new Local(9,"Cafeteria Neumman","España 2354",5,5);
-    Local comidasNaN = new Local(10,"Comidas NaN"," Cordoba 576",35,5);
+    Local almacenDonJose = new Local(1, "- Almacen Don José", "Urquiza 920", 20.30, 4);
+    Local kioscoSanMiguel = new Local(2,"- Kiosco San Miguel","Belgrano 776",15,5);
+    Local rotiseriaCucu = new Local(3,"- Rotiseria Cucu","Italia 76",10,3);
+    Local pizzaAhora = new Local(4,"- ¡Pizza ahora!","San Martin 96",15,4);
+    Local lomitos100 = new Local(5,"- Lomitos 100%","Belgrano 24",15,5);
+    Local empanadasLocales = new Local(6,"- Empanadas Locales","Belgrano 333",25,4);
+    Local restauranteRodriguez = new Local(7,"- Restaurante Rodriguez","Libertad 241",15,3);
+    Local heladeriaVaticano = new Local(8,"- Heladeria Vaticano","Europa 231",5,2);
+    Local cafeteriaNeumman = new Local(9,"- Cafeteria Neumman","España 2354",5,5);
+    Local comidasNaN = new Local(10,"- Comidas NaN"," Córdoba 576",35,5);
 
 
 

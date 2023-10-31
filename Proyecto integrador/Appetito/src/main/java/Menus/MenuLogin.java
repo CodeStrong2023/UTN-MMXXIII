@@ -143,34 +143,34 @@ public class MenuLogin {
             System.out.println("2. Iniciar sesión");
             System.out.println("3. Iniciar sesión Admin");
             System.out.println("4. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.println("Seleccione una opción: ");
             Op = scanner.nextInt();
 
             switch (Op) {
                 case 1:
                     do {
                         System.out.println("=== Registro de usuario ===");
-                        System.out.print("Ingrese el nombre de usuario: ");
+                        System.out.println("Ingrese el nombre de usuario: ");
                         Usuario = scanner.next();
 
                         if (Usuario.equals("admin")) {
                             System.out.println("El nombre de usuario ya ha sido utilizado. Ingrese uno distinto.");
                         } else {
-                            System.out.print("Ingrese la contraseña (de 6 a 20 caracteres, combinación necesaria de mayúsculas, minúsculas, números y signos especiales. Ej: 'Hola123#'): ");
+                            System.out.println("Ingrese la contraseña (de 6 a 20 caracteres, combinación necesaria de mayúsculas, minúsculas, números y signos especiales. Ej: 'Hola123#'): ");
                             Contrasena = scanner.next();
 
-                            System.out.print("Ingrese el medio de pago: ");
+                            System.out.println("Ingrese el medio de pago: ");
                             Pago = scanner.next();
-
-                            System.out.print("Ingrese su dirección: ");
-                            Direccion = scanner.next();
-                            Direccion += scanner.next();
-                            /* PROBLEMA EN INGRESO DE DIRECCIÓN CON ESPACIOS */
-
-                            System.out.print("Ingrese su número de teléfono: ");
+                            
+                            scanner.nextLine();
+                            
+                            System.out.println("Ingrese su dirección: ");
+                            Direccion = scanner.nextLine();
+                            
+                            System.out.println("Ingrese su número de teléfono: ");
                             Telefono = scanner.next();
 
-                            System.out.print("Ingrese su Correo electrónico: ");
+                            System.out.println("Ingrese su Correo electrónico: ");
                             Correo = scanner.next();
 
                             VC = Validar(Contrasena, I, X);
@@ -206,9 +206,9 @@ public class MenuLogin {
                 case 2:
                     if (!Usuario.equals(" ") && !Contrasena.equals(" ")) {
                         System.out.println("=== Iniciar sesión ===");
-                        System.out.print("Ingrese su nombre de usuario: ");
+                        System.out.println("Ingrese su nombre de usuario: ");
                         String inputUsuario = scanner.next();
-                        System.out.print("Ingrese su contraseña: ");
+                        System.out.println("Ingrese su contraseña: ");
                         String inputContrasena = scanner.next();
 
                         if (Usuarios[0][1].equals(inputUsuario) && Usuarios[1][1].equals(inputContrasena)) {
@@ -241,9 +241,9 @@ public class MenuLogin {
 
                 case 3:
                     System.out.println("=== Iniciar sesión (Admin) ===");
-                    System.out.print("Ingrese su nombre de usuario Admin (admin): ");
+                    System.out.println("Ingrese su nombre de usuario Admin (admin): ");
                     String inputUsuarioAdmin = scanner.next();
-                    System.out.print("Ingrese su contraseña Admin (admin123#): ");
+                    System.out.println("Ingrese su contraseña Admin (admin123#): ");
                     String inputContrasenaAdmin = scanner.next();
 
 
