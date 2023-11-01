@@ -17,14 +17,14 @@ public class ListaProductos {
     Producto salsaDeTomate = new Producto("Salsa de tomate", "Salsa de tomate con ajo 200gr",250,1);
     Producto azucar = new Producto("Azúcar", "Azúcar blanca 1kg",800,10);
     Producto aceite = new Producto("Aceite Natura", "Aceite de maiz",950,17);
-    Producto mayonesa = new Producto("Mayoneza Natura", "500 gr",4,8);
+    Producto mayonesa = new Producto("Mayoneza Natura", "500 gr",480,10);
     // ----------------------------------- Bebidas -------------------------------------
     Producto crush = new Producto("Crush", "Gaseosa con sabor a naranja",950,10);
     Producto cocaCola = new Producto("Coca Cola", "Gaseosa de cola 1lt",1200,17);
-    Producto sprite = new Producto("Sprite", "Gaseosa sprite 1lr",4,8);
-    Producto cerveza = new Producto("Quilmes", "Cerveza de litro no retornable",3.5,10);
+    Producto sprite = new Producto("Sprite", "Gaseosa sprite 1lr",650,10);
+    Producto cerveza = new Producto("Quilmes", "Cerveza de litro no retornable",1200,20);
     Producto vino = new Producto("Trumpeter Malvec", "Vino tinto 750ml",3500,17);
-    Producto aguaMineral = new Producto("Villavicencio", "Agua mineral de 500ml",4,5);
+    Producto aguaMineral = new Producto("Villavicencio", "Agua mineral de 500ml",450,5);
     // ----------------------- Restaurantes --------------------------
     Producto pizzaMuzzarella = new Producto("Pizza Muzzarella", "Pizza mediana con salsa y muzzarella",1200,10);
     Producto hamburguesa = new Producto("Hamburguesa", "Doble con queso",1500,17);

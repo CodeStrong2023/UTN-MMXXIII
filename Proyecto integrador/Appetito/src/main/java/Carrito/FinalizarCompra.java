@@ -24,7 +24,7 @@ public class FinalizarCompra {
         System.out.println("|   Nombre de Usuario  "+  llenarEspacio(usuarios[0][1], 44)+"|");
         System.out.println(linea);
         if (usuarios[0][1]=="admin"){
-            System.out.println("|   Dirección  "+ llenarEspacio(usuarios[9][1], 54)+"|");
+            System.out.println("|   Dirección  "+ llenarEspacio(usuarios[9][1], 52)+"|");
             carrito.mostrarCarrito();
             System.out.println("| Medio de pago  "+ llenarEspacio(usuarios[8][1], 50)+"|");
             System.out.println(linea);
