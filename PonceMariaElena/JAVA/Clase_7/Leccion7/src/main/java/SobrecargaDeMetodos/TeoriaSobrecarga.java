@@ -8,7 +8,7 @@ package SobrecargaDeMetodos;
  *
  * @author Marie
  */
-public class PruebaSobrecarga {
+public class TeoriaSobrecarga {
         public static void main(String[] args) {
         int resultado = Operaciones.sumar(7, 9);
         System.out.println("resultado = " + resultado);
