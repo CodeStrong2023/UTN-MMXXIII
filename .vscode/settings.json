@@ -1,3 +1,7 @@
 {
-	"java.configuration.updateBuildConfiguration": "disabled"
+	"java.configuration.updateBuildConfiguration": "disabled",
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.autopep8"
+	},
+	"python.formatting.provider": "none"
 }
