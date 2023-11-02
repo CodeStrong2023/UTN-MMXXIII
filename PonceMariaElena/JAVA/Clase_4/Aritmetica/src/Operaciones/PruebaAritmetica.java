@@ -26,4 +26,6 @@ public class PruebaAritmetica {
         // No se puede acceder a los atributos de la clase Aritmetica
         // System.out.println("a = " + a);
     }
+
+    
 }
