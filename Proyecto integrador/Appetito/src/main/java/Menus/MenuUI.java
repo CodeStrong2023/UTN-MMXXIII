@@ -28,7 +28,7 @@ public class MenuUI {
         }
 
         System.out.println(menuUI.get("opcionSalir"));
-        System.out.print(menuUI.get("solicitarOpcion"));
+        System.out.println(menuUI.get("solicitarOpcion"));
 
         //Leer opcion
         int opcion = scanner.nextInt();
@@ -91,6 +91,7 @@ public class MenuUI {
         }
         scanner.close();
     }
+
     public void mostrarMenu(Map<String, String> menu, List<Consumer<String>> metodos) {
         Scanner scanner = new Scanner(System.in);
 

@@ -9,7 +9,7 @@ public class MenuPrincipal {
     Consumer<String>[] opciones;
     FiltroMenuLocal menu = new FiltroMenuLocal();
 
-    MenuDeCategorias menuCategorias = new MenuDeCategorias(this);
+    MenuDeCategorias menuDeCategorias = new MenuDeCategorias(this);
     MenuLogin menuLogin = new MenuLogin(this);
 
     public String procedencia = "MP";
@@ -25,7 +25,7 @@ public class MenuPrincipal {
     public Consumer[] metodosMenuPrincipal() {
         opciones = new Consumer[]{
                 opcion -> menu.mostrarLocal(),         // Opción 1
-                opcion -> menuCategorias.menuCategorias(),      // Opción 2
+                opcion -> menuDeCategorias.menuDeCategorias(),      // Opción 2
                 opcion -> menuLogin.menuLogin(procedencia)             // Opción 3
         };
         return opciones;

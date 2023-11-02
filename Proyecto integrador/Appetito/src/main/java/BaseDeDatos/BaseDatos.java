@@ -5,16 +5,16 @@ import java.util.List;
 
 public class BaseDatos {
 
-    Local almacenDonJose = new Local(1, "Almacen Don Jose", "Urquiza 920", 20.30, 4);
-    Local kioscoSanMiguel = new Local(2,"Kiosco San Miguel","Belgrano 776",15,5);
-    Local rotiseriaCucu = new Local(3,"Rotiseria Cucu","Italia 76",10,3);
-    Local pizzaAhora = new Local(4,"Pizza ahora!","San Martin 96",15,4);
-    Local lomitos100 = new Local(5,"Lomitos 100%","Belgrano 24",15,5);
-    Local empanadasLocales = new Local(6,"Empanadas Locales","Belgrano 333",25,4);
-    Local restauranteRodriguez = new Local(7,"Restaurante Rodriguez","Libertad 241",15,3);
-    Local heladeriaVaticano = new Local(8,"Heladeria Vaticano","Europa 231",5,2);
-    Local cafeteriaNeumman = new Local(9,"Cafeteria Neumman","España 2354",5,5);
-    Local comidasNaN = new Local(10,"Comidas NaN"," Cordoba 576",35,5);
+    Local almacenDonJose = new Local(1, "- Almacen Don José", "Urquiza 920", 20.30, 4);
+    Local kioscoSanMiguel = new Local(2,"- Kiosco San Miguel","Belgrano 776",15,5);
+    Local rotiseriaCucu = new Local(3,"- Rotiseria Cucu","Italia 76",10,3);
+    Local pizzaAhora = new Local(4,"- ¡Pizza ahora!","San Martin 96",15,4);
+    Local lomitos100 = new Local(5,"- Lomitos 100%","Belgrano 24",15,5);
+    Local empanadasLocales = new Local(6,"- Empanadas Locales","Belgrano 333",25,4);
+    Local restauranteRodriguez = new Local(7,"- Restaurante Rodriguez","Libertad 241",15,3);
+    Local heladeriaVaticano = new Local(8,"- Heladeria Vaticano","Europa 231",5,2);
+    Local cafeteriaNeumman = new Local(9,"- Cafeteria Neumman","España 2354",5,5);
+    Local comidasNaN = new Local(10,"- Comidas NaN"," Córdoba 576",35,5);
 
 
 
@@ -109,28 +109,28 @@ public class BaseDatos {
                 local = kioscoSanMiguel;
                 break;
             case 3:
-                local = restauranteRodriguez;
+                local = rotiseriaCucu ;
                 break;
             case 4:
-                local = rotiseriaCucu;
+                local = pizzaAhora  ;
                 break;
             case 5:
-                local = cafeteriaNeumman;
+                local = lomitos100 ;
                 break;
             case  6:
-                local = heladeriaVaticano;
+                local = empanadasLocales ;
                 break;
             case 7:
-                local = comidasNaN;
+                local = restauranteRodriguez ;
                 break;
             case 8:
-                local = lomitos100;
+                local = heladeriaVaticano;
                 break;
             case 9:
-                local = empanadasLocales;
+                local = cafeteriaNeumman;
                 break;
             case 10:
-                local = pizzaAhora;
+                local = comidasNaN;
                 break;
         }
         return local;
@@ -141,14 +141,14 @@ public class BaseDatos {
         List locales = new ArrayList();
         locales.add(almacenDonJose.getNombre());
         locales.add(kioscoSanMiguel.getNombre());
-        locales.add(restauranteRodriguez.getNombre());
         locales.add(rotiseriaCucu.getNombre());
-        locales.add(cafeteriaNeumman.getNombre());
-        locales.add(heladeriaVaticano.getNombre());
-        locales.add(comidasNaN.getNombre());
+        locales.add(pizzaAhora.getNombre());
         locales.add(lomitos100.getNombre());
         locales.add(empanadasLocales.getNombre());
-        locales.add(pizzaAhora.getNombre());
+        locales.add(restauranteRodriguez.getNombre());
+        locales.add(heladeriaVaticano.getNombre());
+        locales.add(cafeteriaNeumman.getNombre());
+        locales.add(comidasNaN.getNombre());
         return locales;
     }
 //Construccion de lista de categorias

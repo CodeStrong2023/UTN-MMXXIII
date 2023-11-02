@@ -121,10 +121,12 @@ public class Carrito {  protected List<Producto> ListaCompra;
         String procedencia = "CC";
         int opcion;
         Scanner scanner = new Scanner(System.in);
+        System.out.println("=== Finalizar Compra ===");
         System.out.println("1 - Confirmar pedido.");
         System.out.println("2 - Eliminar un producto.");
         System.out.println("3 - Cambiar la cantidad de un product o.");
         System.out.println("4 - Salir de la aplicación.");
+        System.out.println("Ingrese una opción: ");
 
         opcion=scanner.nextInt();
 

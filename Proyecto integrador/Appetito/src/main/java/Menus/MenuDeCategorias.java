@@ -1,6 +1,5 @@
 package Menus;
 
-import BaseDeDatos.BaseDatos;
 import BaseDeDatos.ListaCategorias;
 import CompraPorCategoria.FiltroDeLocalesPorCategoria;
 
@@ -12,13 +11,12 @@ import java.util.function.Consumer;
 
 
 public class MenuDeCategorias {
-    Consumer<String>[] opciones;
-
     ListaCategorias listaCategorias = new ListaCategorias();
     Map<String, String> menuCategorias = new HashMap<String, String>();
     MenuPrincipal menuPrincipal;
-    List<String> localesXCategoria = new ArrayList<>();
-    FiltroDeLocalesPorCategoria filtroDeLocalesPorCategoria = new FiltroDeLocalesPorCategoria();
+    private FiltroDeLocalesPorCategoria filtroDeLocalesPorCategoria;
+
+    private Consumer<String>[] opciones;
 
     public  Map<String, String> construirLista( ListaCategorias listaCategorias){
         String key = null;
@@ -33,19 +31,24 @@ public class MenuDeCategorias {
     }
 
 
-    public Consumer[] metodosMenuCategorias() {
-         opciones = new Consumer[]{
-             opcion -> filtroDeLocalesPorCategoria.filtrarLocalesPorCategoria(0, listaCategorias),         // Opción 1
-             opcion -> filtroDeLocalesPorCategoria.filtrarLocalesPorCategoria(1, listaCategorias),      // Opción 2
-             opcion -> filtroDeLocalesPorCategoria.filtrarLocalesPorCategoria(2, listaCategorias),
-             opcion -> filtroDeLocalesPorCategoria.filtrarLocalesPorCategoria(3, listaCategorias),
-             opcion -> filtroDeLocalesPorCategoria.filtrarLocalesPorCategoria(4, listaCategorias),
-             opcion -> filtroDeLocalesPorCategoria.filtrarLocalesPorCategoria(5, listaCategorias),
-             opcion -> filtroDeLocalesPorCategoria.filtrarLocalesPorCategoria(6, listaCategorias),
-             opcion -> volverAlMenuPrincipal() // Opción 10
-         };
-         return opciones;
-         }
+    public Consumer<String>[] metodosMenuCategorias() {
+        filtroDeLocalesPorCategoria = new FiltroDeLocalesPorCategoria();
+
+
+        List<Consumer<String>> listaConsumidores = new ArrayList<>(); // Lista de Consumers
+
+        for (int i = 0; i < menuCategorias.size(); i++) {
+            int index = i;
+            listaConsumidores.add(opcion -> filtroDeLocalesPorCategoria.filtroDeLocalesPorCategoria(index,
+                    listaCategorias));
+        }
+
+        listaConsumidores.add(opcion -> volverAlMenuPrincipal());
+
+        opciones = listaConsumidores.toArray(new Consumer[0]); // Convertir la lista a un array
+
+        return opciones;
+    }
 
     public MenuDeCategorias(MenuPrincipal menuPrincipal) {
         this.menuPrincipal = menuPrincipal;
@@ -55,13 +58,12 @@ public class MenuDeCategorias {
     }
 
 
-public void menuCategorias() {
-    construirLista(listaCategorias);
+    public void menuDeCategorias() {
+        construirLista(listaCategorias);
 
-    MenuUI menu = new MenuUI();
-    menu.mostrarMenu(menuCategorias, metodosMenuCategorias());
+        MenuUI menu = new MenuUI();
+        menu.mostrarMenu(menuCategorias, metodosMenuCategorias());
 
-}
-
+    }
 
 }

@@ -20,13 +20,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -139,7 +132,11 @@
       <workItem from="1698607475456" duration="4536000" />
       <workItem from="1698612100218" duration="71000" />
       <workItem from="1698615313540" duration="1241000" />
+<<<<<<< HEAD
       <workItem from="1698771062898" duration="701000" />
+=======
+      <workItem from="1698678073320" duration="1414000" />
+>>>>>>> 464d06c79e2b9ec73522aa114aa3ab44551fffd9
     </task>
     <task id="LOCAL-00001" summary="Modulo Menu Principal">
       <option name="closed" value="true" />
@@ -181,6 +178,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modulo Menu Principal" />
     <option name="LAST_COMMIT_MESSAGE" value="Modulo Menu Principal" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Menus/MenuPrincipal.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
