@@ -63,13 +63,12 @@ public class MenuLogin {
     }
     
     //Método para comprobar que el correo ingresado cumpla con los requisitos (Una sola "@" y al menos un carácter después de "@")
-    public static boolean ValidarCorreo(String Correo, int I) {
-        int Arroba, Punto;
+    public static boolean ValidarCorreo(String Correo) {
         boolean C = false;
 
-        for (int i = 0; i < Correo.length(); i++) {
-            if (Correo.charAt(i) == '@') {
-                if (i + 1 < Correo.length() && Correo.charAt(i + 1) != '.') {
+        for (I = 0; I < Correo.length(); I++) {
+            if (Correo.charAt(I) == '@') {
+                if (I + 1 < Correo.length() && Correo.charAt(I + 1) != '.') {
                     C = true;
                 }
             }
@@ -78,7 +77,7 @@ public class MenuLogin {
     }
     
     //Método para validar si la contraseña cumple con ciertos criterios, como longitud mínima, presencia de dígitos, mayúsculas y caracteres especiales.
-    public static boolean Validar(String Contrasena, int I, int X) {
+    public static boolean Validar(String Contrasena) {
         boolean V, Digito, Mayus, CE;
         String Num = "0123456789";
         String Especial = "!@#$%^&*(),.?{}|<>";
@@ -173,8 +172,8 @@ public class MenuLogin {
                             System.out.println("Ingrese su Correo electrónico: ");
                             Correo = scanner.next();
 
-                            VC = Validar(Contrasena, I, X);
-                            C = ValidarCorreo(Correo, I);
+                            VC = Validar(Contrasena);
+                            C = ValidarCorreo(Correo);
                         }
 
                         if (!Usuario.equals(" ") && !Contrasena.equals(" ") && !Pago.equals(" ") && !Direccion.equals(" ") && !Telefono.equals(" ") && !Correo.equals(" ")) {
