@@ -1,6 +1,6 @@
 package Menus;/*MODULO: Menu Principal--------------------------------------------------------------------------------------------------------menu principal */
 
-
+//Librerias importadas
 import Carrito.Carrito;
 import Carrito.FinalizarCompra;
 import Utilidades.ConectorLogin;
@@ -18,16 +18,12 @@ public class MenuLogin {
     public static boolean C = false;
     private  MenuPrincipal menuPrincipal;
     private  Carrito carrito;
-    String prueba = "prueba BASE";
-    public String getPrueba() {
-        return prueba;
-    }
-
 
     public MenuLogin( Carrito carrito) {
         this.carrito = carrito;
     }
-
+    
+    //Método Guardar para almacenar la información del usuario en una matriz, además de valores predeterminados de prueba.
     public static void Guardar(String Usuario, String Contrasena, String Pago, String Direccion, String Telefono, String Correo) {
         Usuarios[0][0] = "Nombre de usuario = ";
         Usuarios[0][1] = Usuario;
@@ -46,7 +42,7 @@ public class MenuLogin {
 
         Usuarios[5][0] = "Correo electrónico = ";
         Usuarios[5][1] = Correo;
-// usuario defaul de pruebas
+//Usuario defaul de pruebas
         Usuarios[6][0] = "Nombre de usuario Admin = ";
         Usuarios[6][1] = Usuario;
 
@@ -65,22 +61,23 @@ public class MenuLogin {
         Usuarios[11][0] = "Correo electrónico Admin = ";
         Usuarios[11][1] = "admin@appetito.com";
     }
-
-    public static boolean ValidarCorreo(String Correo, int I) {
-        int Arroba, Punto;
+    
+    //Método para comprobar que el correo ingresado cumpla con los requisitos (Una sola "@" y al menos un carácter después de "@")
+    public static boolean ValidarCorreo(String Correo) {
         boolean C = false;
 
-        for (int i = 0; i < Correo.length(); i++) {
-            if (Correo.charAt(i) == '@') {
-                if (i + 1 < Correo.length() && Correo.charAt(i + 1) != '.') {
+        for (I = 0; I < Correo.length(); I++) {
+            if (Correo.charAt(I) == '@') {
+                if (I + 1 < Correo.length() && Correo.charAt(I + 1) != '.') {
                     C = true;
                 }
             }
         }
         return C;
     }
-
-    public static boolean Validar(String Contrasena, int I, int X) {
+    
+    //Método para validar si la contraseña cumple con ciertos criterios, como longitud mínima, presencia de dígitos, mayúsculas y caracteres especiales.
+    public static boolean Validar(String Contrasena) {
         boolean V, Digito, Mayus, CE;
         String Num = "0123456789";
         String Especial = "!@#$%^&*(),.?{}|<>";
@@ -119,7 +116,8 @@ public class MenuLogin {
 
         return V;
     }
-
+    
+    //Método que proporciona un menú de opciones para el cliente pueda registrarse o iniciar sesión.
     public void menuLogin(String procedencia) {
         String Usuario, Contrasena, Pago, Direccion, Telefono, Correo, UsuarioAdm, ContrasenaAdm;
         int Op;
@@ -149,6 +147,7 @@ public class MenuLogin {
             switch (Op) {
                 case 1:
                     do {
+                        //Permite al usuario registrar la información y almacenarla en una matriz.
                         System.out.println("=== Registro de usuario ===");
                         System.out.println("Ingrese el nombre de usuario: ");
                         Usuario = scanner.next();
@@ -173,8 +172,8 @@ public class MenuLogin {
                             System.out.println("Ingrese su Correo electrónico: ");
                             Correo = scanner.next();
 
-                            VC = Validar(Contrasena, I, X);
-                            C = ValidarCorreo(Correo, I);
+                            VC = Validar(Contrasena);
+                            C = ValidarCorreo(Correo);
                         }
 
                         if (!Usuario.equals(" ") && !Contrasena.equals(" ") && !Pago.equals(" ") && !Direccion.equals(" ") && !Telefono.equals(" ") && !Correo.equals(" ")) {
@@ -204,6 +203,7 @@ public class MenuLogin {
                     break;
 
                 case 2:
+                    //Permite iniciar sesión como cliente, siempre y cuando el nombre usuario y la contraseña coincidan.
                     if (!Usuario.equals(" ") && !Contrasena.equals(" ")) {
                         System.out.println("=== Iniciar sesión ===");
                         System.out.println("Ingrese su nombre de usuario: ");
@@ -240,6 +240,7 @@ public class MenuLogin {
                     break;
 
                 case 3:
+                    //Permite iniciar sesión como administrador.
                     System.out.println("=== Iniciar sesión (Admin) ===");
                     System.out.println("Ingrese su nombre de usuario Admin (admin): ");
                     String inputUsuarioAdmin = scanner.next();
@@ -256,11 +257,13 @@ public class MenuLogin {
                         System.out.println(" ");
                         Op = 4;
                         conector.setUsuarios(Usuarios);
+                        
                         if ( !procedencia.equals("CC")){
                             menuPrincipal.menuPrincipal();
                         } else {
                             FinalizarCompra.imprimir(carrito.local,carrito.getListaCompra());
                         }
+                        
                     } else {
                         System.out.println("Nombre de usuario o contraseña incorrectos");
                         System.out.println(" ");
@@ -268,6 +271,7 @@ public class MenuLogin {
                     break;
 
                 case 4:
+                    //Permite salir de programa
                     salir();
                     break;
 
