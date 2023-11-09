@@ -70,3 +70,53 @@ else{
 }
 
 console.log(Mensaje);
+
+//const se utiliza para valores constantes que no pueden ser reasignadas
+
+const FechaNacimiento = 2006;
+console.log(FechaNacimiento);
+//FechaNacimiento = 2003;
+//console.log(FechaNacimiento); //Solo se ejecuta el console anterior.
+
+//Evitar repetir tu código
+//Try to don't repeat yourself
+
+let Dias = 4;
+
+switch(Dias){
+    case 1:
+        console.log("Hoy es lunes");
+        break;
+    case 2:
+        console.log("Hoy es martes");
+        break;
+    case 3:
+        console.log("Hoy es miércoles");
+        break;  
+    case 4:
+        console.log("Hoy es jueves");
+        break;
+    case 5:
+        console.log("Hoy es viernes");
+        break;
+    case 6:
+        console.log("Hoy es sábado");
+        break;  
+    case 7:
+        console.log("Hoy es domingo");
+        break;
+    default:
+        console.log("Error en el ingreso del dia de la semana");
+        break;
+}
+
+let Dias2 = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+
+function getDay(N){
+    if(N < 1 || N > 7){
+        throw new Error("Fuera de rango");
+    }
+    return Dias2[N - 1];
+}
+
+console.log(getDay(2));
