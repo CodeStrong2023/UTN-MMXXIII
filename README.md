@@ -56,6 +56,17 @@ Los trabajos individuales se encuentran en cada rama de cada alumno.
 * Aplicación en línea de comandos para la compra de productos en comercios.
 * Realizada originalmente en Pseudocódigo desde el Paradigma de Programación Imperativa con el programa Pseint y migrada al lenguaje JAVA utilizando el Paradigma de Programación Orientado a Objetos.
 
+
+## EJECUCION
+* Para ejecutar el proyecto, se debe clonar el repositorio con el comando 
+git clone https://github.com/CodeStrong2023/UTN-MMXXIII.git
+
+* Luego se debe ejecutar el archivo MAIN.JAVA que se encuentra en la direccion: 
+Proyecto integrador\Appetito\src\main\java\org\example
+
+
+# CARACTERISTICAS
+
 * Consta de un menú de opciones que permite gestionar:
     - _Usuarios:_ perfiles de usuario y login en la App.
     - _Compra por Locales:_ realizar la compra a partir del listado de locales registrados en la app.
